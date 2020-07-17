@@ -1,4 +1,4 @@
-# configuration 善用搜索
+# 常用配置 善用搜索
 ## Linux
 ### 换源
 > Ubuntu
@@ -90,8 +90,18 @@ sudo apt update && sudo apt upgrade
     sudo pacman-mirrors -i -c China -m rank
     ```
 
-
 ## WSL
+### 本机代理Clash版
+```sh
+# 修改.bashrc文件
+sudo vim ~/.bashrc
+# 追加内容 根据软件端口做跳转 软件需要打开 Allow LAN 以上
+export https_proxy="http://192.168.10.104:7890";
+export http_proxy="http://192.168.10.104:7890";
+export all_proxy="socks5://192.168.10.104:7891";
+# 刷新
+source ~/.bashrc
+```
 
 ## Java配置
 
@@ -132,7 +142,7 @@ ssh-keygen -t rsa -C "example@outlook.com"
 得到`id_rsa`和`id_rsa.pub`两个文件，在工作目录下的`.ssh`中。
 + Windows 目录
     ```
-    C:\Users\username\.shh\
+    C:\Users\username\.ssh\
     ```
 + Linux 目录
     ```
