@@ -1,45 +1,4 @@
-# configuration
-
-## Java配置
-
-
-## Web配置
-### NPM换源
-```sh
-# 更换为淘宝源
-npm config set registry https://registry.npm.taobao.org
-# 查看是否生效
-npm config list
-```
-
-## Git配置
-### 初次运行
-```sh
-# 配置用户名
-git config --global user.name "OriginZero"
-# 配置邮箱
-git config --global user.email "example@outlook.com"
-```
-
-### 配置SSH
-#### 为本机生成密钥SSH
-```sh
-ssh-keygen -t rsa -C "example@outlook.com"
-```
-得到`id_rsa`和`id_rsa.pub`两个文件，在工作目录下的`.ssh`中。
-+ Windows 目录
-    ```
-    C:\Users\username\.shh\
-    ```
-+ Linux 目录
-    ```
-    ~/.ssh/
-    ```
-#### 将密钥内容复制到添加至Github || Gitlab
-> 将.ssh/id_rsa.pub 内容复制到github或者gitlab中
-
-一般在 `头像 > settings > ssh keys` 下
-
+# configuration 善用搜索
 ## Linux
 ### 换源
 > Ubuntu
@@ -134,7 +93,57 @@ sudo apt update && sudo apt upgrade
 
 ## WSL
 
+## Java配置
 
+## Web配置
+### Linux快速安装Node.js (LTS v12.x)
+```sh
+# Using Ubuntu
+curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# Using Debian, as root
+curl -sL https://deb.nodesource.com/setup_lts.x | bash -
+apt-get install -y nodejs
+```
+[Github项目地址(包含其他版本)](https://github.com/nodesource/distributions)
+### NPM换源
+```sh
+# 更换为淘宝源
+npm config set registry https://registry.npm.taobao.org
+# 查看是否生效
+npm config list
+```
+
+## Git配置
+### 初次运行
+```sh
+# 配置用户名
+git config --global user.name "OriginZero"
+# 配置邮箱
+git config --global user.email "example@outlook.com"
+```
+
+### 配置SSH
+#### 为本机生成密钥SSH
+```sh
+ssh-keygen -t rsa -C "example@outlook.com"
+```
+得到`id_rsa`和`id_rsa.pub`两个文件，在工作目录下的`.ssh`中。
++ Windows 目录
+    ```
+    C:\Users\username\.shh\
+    ```
++ Linux 目录
+    ```
+    ~/.ssh/
+    ```
+#### 将密钥内容复制到添加至Github || Gitlab
+> 将.ssh/id_rsa.pub 内容复制到github或者gitlab中
+
+一般在 `头像 > settings > ssh keys` 下
+
+### [Git常见操作](https://juejin.im/post/5d5d61e96fb9a06ace5254bd#heading-26)
 ## 广告过滤规则
 > 在浏览器拓展插件中添加
 ```sh
