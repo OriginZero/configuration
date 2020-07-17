@@ -1,5 +1,6 @@
 # 常用配置 善用搜索
 ## Linux
+
 ### 换源
 > Ubuntu
 ```sh
@@ -90,6 +91,9 @@ sudo apt update && sudo apt upgrade
     sudo pacman-mirrors -i -c China -m rank
     ```
 
+## Windows Terminal 配置
+[settings.json](.\terminalconfig\settings.json)
+
 ## WSL
 ### 本机代理Clash版
 ```sh
@@ -99,7 +103,7 @@ sudo vim ~/.bashrc
 export https_proxy="http://192.168.10.104:7890";
 export http_proxy="http://192.168.10.104:7890";
 export all_proxy="socks5://192.168.10.104:7891";
-# 刷新
+# 刷新生效
 source ~/.bashrc
 ```
 
