@@ -166,3 +166,23 @@ https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
 # 乘风视频广告过滤规则
 https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
 ```
+
+## 阅读颜色配置
+### 背景
+```sh
+RGB(241, 229, 201)
+# 十六进制
+#F1E5C9
+```
+### 字体颜色
+```sh
+RGB(13, 24, 54)
+# 十六进制
+#0D1836
+```
+### 链接
+```sh
+RGB(49, 94, 251)
+# 十六进制
+#315EFB
+```
